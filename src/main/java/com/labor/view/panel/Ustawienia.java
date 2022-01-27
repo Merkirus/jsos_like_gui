@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class Ustawienia extends JFrame implements Panel {
 
-    private static final int WYS = 200;
+    private static final int WYS = 400;
     private static final int SZE = 200;
 
     private Zakladka<StrategiaWyplatyND> panelND;
