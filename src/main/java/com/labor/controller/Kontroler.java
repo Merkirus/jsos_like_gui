@@ -117,6 +117,8 @@ public class Kontroler {
             ((PracownikND) model.getListaPracownikow().get(i)).setLiczbaPublikacja(pracownikNDEvent.getLiczbaPublikacja());
             ((PracownikND) model.getListaPracownikow().get(i)).setLiczbaNadgodzin(pracownikNDEvent.getLiczbaNadgodzin());
 
+            model.getListaPracownikow().get(i).obliczWyplate();
+
             model.aktualizacjaZmiennej();
             view.aktualizuj(model.getListaKursow(), model.getListaStudentow(), model.getListaStypendystow(), model.getListaPracownikow());
         }
@@ -137,6 +139,8 @@ public class Kontroler {
             ((PracownikU) model.getListaPracownikow().get(i)).setLiczbaNadgodzin(pracownikUEvent.getLiczbaNadgodzin());
             ((PracownikU) model.getListaPracownikow().get(i)).setLiczbaJezykowObcych(pracownikUEvent.getLiczbaJezykowObcych());
 
+            model.getListaPracownikow().get(i).obliczWyplate();
+
             model.aktualizacjaZmiennej();
             view.aktualizuj(model.getListaKursow(), model.getListaStudentow(), model.getListaStypendystow(), model.getListaPracownikow());
         }
@@ -151,6 +155,7 @@ public class Kontroler {
             for (Pracownik pracownik : model.getListaPracownikow()) {
                 if (pracownik instanceof PracownikND) {
                     pracownik.zmienStrategiaWyplaty(strategiaWyplatyND);
+                    pracownik.obliczWyplate();
                 }
             }
 
@@ -168,33 +173,10 @@ public class Kontroler {
             for (Pracownik pracownik : model.getListaPracownikow()) {
                 if (pracownik instanceof PracownikU) {
                     pracownik.zmienStrategiaWyplaty(strategiaWyplatyU);
+                    pracownik.obliczWyplate();
                 }
             }
 
-            model.aktualizacjaZmiennej();
-            view.aktualizuj(model.getListaKursow(), model.getListaStudentow(), model.getListaStypendystow(), model.getListaPracownikow());
-        }
-    }
-
-    class WybierzStrategieWyplaty implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            StrategiaWyplaty strategiaWyplaty = null;
-
-            if (view.getUstawienia().getPanelND().zapisz()!=null) {
-                strategiaWyplaty = view.getUstawienia().getPanelND().zapisz();
-            } else {
-                strategiaWyplaty = view.getUstawienia().getPanelU().zapisz();
-            }
-
-            for (Pracownik pracownik : model.getListaPracownikow()) {
-                if (pracownik instanceof PracownikND) {
-                    pracownik.zmienStrategiaWyplaty(strategiaWyplaty);
-                } else if (pracownik instanceof PracownikU) {
-                    pracownik.zmienStrategiaWyplaty(strategiaWyplaty);
-                }
-            }
             model.aktualizacjaZmiennej();
             view.aktualizuj(model.getListaKursow(), model.getListaStudentow(), model.getListaStypendystow(), model.getListaPracownikow());
         }

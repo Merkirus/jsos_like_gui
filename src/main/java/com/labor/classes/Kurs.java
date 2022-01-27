@@ -101,4 +101,7 @@ public class Kurs implements Serializable, PodmiotKurs {
         this.wykladowca = wykladowca;
     }
 
+    public HashMap<Student, ArrayList<Integer>> getDziennik() {
+        return dziennik;
+    }
 }

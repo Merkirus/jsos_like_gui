@@ -16,7 +16,11 @@ public class PracownikU extends Pracownik<StrategiaWyplatyU> {
     @Override
     public void zmienStrategiaWyplaty(StrategiaWyplatyU strategiaWyplaty) {
         this.strategiaWyplaty = strategiaWyplaty;
-        this.wyplata = strategiaWyplaty.wyplata(liczbaNadgodzin, liczbaJezykowObcych, trybPracy, umiejetnosci);
+    }
+
+    @Override
+    public void obliczWyplate() {
+        this.wyplata = ((StrategiaWyplatyU) strategiaWyplaty).wyplata(liczbaNadgodzin, liczbaJezykowObcych, trybPracy, umiejetnosci);
     }
 
     public void setLiczbaJezykowObcych(int liczbaJezykowObcych) {

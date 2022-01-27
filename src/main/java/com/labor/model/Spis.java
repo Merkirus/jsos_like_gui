@@ -10,6 +10,8 @@ import com.labor.model.observerKurs.ObserwatorKurs;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Spis implements Podmiot, ObserwatorKurs, Serializable {
 
@@ -37,6 +39,7 @@ public class Spis implements Podmiot, ObserwatorKurs, Serializable {
             listaStudentow.remove(student);
         } else if (student.getLiczbaWybitnychSrendnich()==3) {
             listaStypendystow.add(student);
+            Collections.sort(listaStypendystow);
         }
         powiadomObserwatora();
     }

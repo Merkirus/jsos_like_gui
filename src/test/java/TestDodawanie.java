@@ -81,6 +81,19 @@ public class TestDodawanie {
     @Test
     void sprawdzStudenta() {
 
+        Student student = new Student("Rafał", "Mielniczuk", "Duszniki", 2002, 123123, 13, 1);
+
+        Pracownik pracownik = new PracownikND("Rafał", "Mielniczuk", "Duszniki", 2002, 123123, 13);
+
+        Kurs kurs = new Kurs("Algebra", pracownik, 5);
+
+        kurs.dodajStudenta(student);
+
+        model.aktualizacjaKurs(kurs);
+
+        int i = model.getListaKursow().indexOf(kurs);
+
+        assertTrue(model.getListaKursow().get(i).getStudenci().contains(student));
     }
 
     @AfterEach

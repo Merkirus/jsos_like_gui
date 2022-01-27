@@ -19,8 +19,6 @@ public class ListaStypendystow extends ListaAbstract {
     public void dodajTabelke() {
         super.dodajTabelke();
 
-        Collections.sort(listaStypendystow);
-
         for (Student student : listaStypendystow) {
             Object[] wiersz = {student.getImie(), student.getNazwisko(), student.getNumerIndeksu(), student.getRocznik()};
             model.addRow(wiersz);

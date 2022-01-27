@@ -13,6 +13,8 @@ public abstract class Pracownik<T> extends Osoba {
         this.numerID = numerID;
     }
 
+    public abstract void obliczWyplate();
+
     public abstract void zmienStrategiaWyplaty(T strategiaWyplaty);
 
     public int getNumerID() {

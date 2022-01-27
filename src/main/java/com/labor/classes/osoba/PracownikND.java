@@ -19,6 +19,11 @@ public class PracownikND extends Pracownik<StrategiaWyplatyND> {
         this.wyplata = strategiaWyplaty.wyplata(liczbaProwadzonychKursow, liczbaNadgodzin, liczbaPublikacja);
     }
 
+    @Override
+    public void obliczWyplate() {
+        this.wyplata = ((StrategiaWyplatyND) strategiaWyplaty).wyplata(liczbaProwadzonychKursow, liczbaNadgodzin, liczbaPublikacja);
+    }
+
     public void dodajNowyKurs() {
         liczbaProwadzonychKursow++;
     }
@@ -33,5 +38,9 @@ public class PracownikND extends Pracownik<StrategiaWyplatyND> {
 
     public void setLiczbaPublikacja(int liczbaPublikacja) {
         this.liczbaPublikacja = liczbaPublikacja;
+    }
+
+    public int getLiczbaProwadzonychKursow() {
+        return liczbaProwadzonychKursow;
     }
 }

@@ -12,7 +12,7 @@ public class CzasPracyU implements StrategiaWyplatyU {
         else if (trybPracy.equals("Wieczorny")) { odTrybu = 400; }
         else if (trybPracy.equals("Nocny")) { odTrybu = 800; }
 
-        return 100*liczbaNadgodzin + 4*odTrybu;
+        return 100*liczbaNadgodzin + 50*odTrybu;
     }
 
     @Override
