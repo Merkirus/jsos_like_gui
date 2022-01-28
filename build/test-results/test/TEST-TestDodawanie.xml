@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestDodawanie" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-01-28T13:21:56" hostname="Mac-mini.home" time="0.043">
+<testsuite name="TestDodawanie" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-01-28T13:31:41" hostname="Mac-mini.home" time="0.019">
   <properties/>
-  <testcase name="dodajPracownika()" classname="TestDodawanie" time="0.024"/>
-  <testcase name="sprawdzWykladowce()" classname="TestDodawanie" time="0.002"/>
-  <testcase name="usunKurs()" classname="TestDodawanie" time="0.001"/>
-  <testcase name="sprawdzStudenta()" classname="TestDodawanie" time="0.002"/>
+  <testcase name="dodajPracownika()" classname="TestDodawanie" time="0.002"/>
+  <testcase name="sprawdzWykladowce()" classname="TestDodawanie" time="0.001"/>
+  <testcase name="usunKurs()" classname="TestDodawanie" time="0.003"/>
+  <testcase name="sprawdzStudenta()" classname="TestDodawanie" time="0.0"/>
   <testcase name="dodajStudenta()" classname="TestDodawanie" time="0.001"/>
-  <testcase name="dodajKurs()" classname="TestDodawanie" time="0.002"/>
+  <testcase name="dodajKurs()" classname="TestDodawanie" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
