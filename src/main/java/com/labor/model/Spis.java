@@ -70,6 +70,7 @@ public class Spis implements Podmiot, ObserwatorKurs, Serializable {
         kurs.zarejestrujObserwatoraKurs(this);
         PracownikND wykladowca = (PracownikND) kurs.getWykladowca();
         wykladowca.dodajNowyKurs();
+        wykladowca.obliczWyplate();
         listaKursow.add(kurs);
         powiadomObserwatora();
     }
@@ -77,6 +78,7 @@ public class Spis implements Podmiot, ObserwatorKurs, Serializable {
     public void usunKurs(Kurs kurs) {
         PracownikND wykladowca = (PracownikND) kurs.getWykladowca();
         wykladowca.zakonczKurs();
+        wykladowca.obliczWyplate();
         listaKursow.remove(kurs);
         powiadomObserwatora();
     }
