@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSortowanieListyStypendystow" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-01-27T02:45:56" hostname="Mac-mini.home" time="0.022">
+<testsuite name="TestSortowanieListyStypendystow" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-01-28T13:21:56" hostname="Mac-mini.home" time="0.001">
   <properties/>
-  <testcase name="posortowanaLista1()" classname="TestSortowanieListyStypendystow" time="0.019"/>
-  <testcase name="posortowanaLista2()" classname="TestSortowanieListyStypendystow" time="0.0"/>
-  <testcase name="posortowanaLista3()" classname="TestSortowanieListyStypendystow" time="0.001"/>
+  <testcase name="posortowanaLista1()" classname="TestSortowanieListyStypendystow" time="0.0"/>
+  <testcase name="posortowanaLista2()" classname="TestSortowanieListyStypendystow" time="0.001"/>
+  <testcase name="posortowanaLista3()" classname="TestSortowanieListyStypendystow" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -24,4 +24,8 @@ public abstract class Pracownik<T> extends Osoba {
     public double getWyplata() {
         return wyplata;
     }
+
+    public StrategiaWyplaty getStrategiaWyplaty() {
+        return strategiaWyplaty;
+    }
 }

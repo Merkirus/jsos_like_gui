@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestWyplaty" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-01-28T13:21:56" hostname="Mac-mini.home" time="0.013">
+  <properties/>
+  <testcase name="ustawStrategieCzasuND()" classname="TestWyplaty" time="0.002"/>
+  <testcase name="ustawStrategieCzasuU()" classname="TestWyplaty" time="0.002"/>
+  <testcase name="ustawStrategieUmiejetnosciU()" classname="TestWyplaty" time="0.002"/>
+  <testcase name="ustawStrategieUmiejetnosciND()" classname="TestWyplaty" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
