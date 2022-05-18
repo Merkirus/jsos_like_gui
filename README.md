@@ -1,1 +1,0 @@
-# ostatniProjektLaby1
